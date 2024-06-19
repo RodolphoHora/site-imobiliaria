@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.limitaSecao {
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../public/assets/img-home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 0 20px;
+}
+
+.banner span {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1efe9;
+    text-transform: uppercase;
+}
+
+.conteudo {
+    width: 100%;
+    max-height: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteudo h1 {
+    font-size: 72px;
+    color: #f1efe9;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bannerRotas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.bannerRotas button {
+    max-width: 265px;
+    width: 100%;
+    border: 2px solid #f1efe9;
+    background-color: #f1efe900;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #f1efe9;
+    cursor: pointer;
+}
+
+.bannerRotas button:hover {
+    background-color: #00000049;
+}
+
+/** Section About */
+
+.about {
+    width: 100%;
+    background-color: #dbdad6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.containerAbout {
+    width: 100%;
+    min-height: 20vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about img {
+    width: 300px;
+    height: 300px;
+}
+
+.containerTextAbout {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 60px;
+}
+
+.containerTextAbout h2 {
+    font-weight: 500;
+    color: #767676;
+}
+
+.containerTextAbout button {
+    border: 2px solid #767676;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #767676;
+    background-color: #dbdad6;
+    cursor: pointer;
+}
+
+.containerTextAbout button:hover {
+    background-color: #ffffffa4;
+}
+
+/** Section To-Sell*/
+
+.paraVenda {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerParaVenda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 120px 0;
+}
+
+.cardCasaParaVenda {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #525050;
+}
+
+.cardCasaParaVenda > img {
+    max-width: 100%;
+}
+
+.cardCasaParaVenda h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cardCasaParaVenda span {
+    font-size: 20px;
+}
+
+.conteudoImovel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+}
+
+.conteudoImovel div {
+    display: flex;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudoImovel > p {
+    font-size: 14px;
+}
+
+.cardCasaParaVenda > figure > img {
+    max-width: 474px;
+}
+/** Section Destaques */
+
+.destaques {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #dfdcd1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+}
+
+.containerDestaques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 20px;
+}
+
+.destaques h2 {
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.containerCasasDestaques {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cardDestaque {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cardDestaque img {
+    width: 300px;
+}
+
+.containerInfoCasas {
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #525050;
+    border: 1px solid #c6c3ba;
+    padding: 15px 20px;
+}
+
+.containerInfoCasas span {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.containerInfoCasas h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.containerInfoCasas > p {
+    font-size: 13px;
+}
+
+.containerConteudoImovel {
+    display: flex;
+    gap: 25px;
+}
+
+/** Section Casas Disponiveis */
+
+.casasDisponiveis {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 120px 0;
+}
+
+.casasDisponiveis h2 {
+    font-weight: 500;
+    color: #525050;
+}
+
+.containerCasasDisponiveis {
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cardCasasDisponiveis, .cardCasasDisponiveis img {
+    width: 300px;
+}
+
+/** Section Opinions */
+
+.Opinioes {
+    width: 100%;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #dfdcd1;
+}
+
+.containerOpinioes {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.cardOpiniao {
+    max-width: 300px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px;
+    border: 1px solid #525050;
+}
+
+.cardOpiniao p {
+    text-align: justify;
+    line-height: 25px;
+    color: #525050;
+}
+
+.cardOpiniao span {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #525050;
+}
+
+/** Section Contato */
+
+footer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #525050;
+}
+
+.containerInfoContato {
+    max-width: 1024px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.containerInfoContato h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f1efe9;
+}
+
+.containerCardsContato {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cardContato {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardContato h2 {
+    color: #f1efe9;
+    margin-bottom: 10px;
+}
+
+.cardContato p {
+    color: #C8C2B3;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerRedes {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.containerRedes i {
+    font-size: 35px;
+    color: #f1efe9;
+}
+
+@media screen and (max-width: 430px) {
+
+    footer {
+        height: fit-content;
+    }
+
+    .containerInfoContato {
+        padding: 20px;
+    }
+    
+    .containerCardsContato {
+        gap: 50px;
+    }
+    
+    .cardContato {       
+        gap: 15px;
+    }
+    
+    .cardContato  h2 {
+        font-size: 25px;
+    }
+    
+    .cardContato p {
+        font-size: 16px;
+    }
+    
+    .redesSociais {
+        gap: 20px;
+        margin-top: 20px;
+    }
+    
+    .containerRedes i {
+        font-size: 30px;
+    }
+}
